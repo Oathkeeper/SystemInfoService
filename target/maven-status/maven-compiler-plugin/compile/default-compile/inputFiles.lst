@@ -1,5 +1,11 @@
 /home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/parsers/UptimeParser.java
 /home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/jaxb/Uptime.java
+/home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/jaxb/Temperature.java
 /home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/testclasses/LoggerTest.java
+/home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/jaxb/AdapterList.java
 /home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/service/SystemInfoServiceController.java
+/home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/jaxb/TemperatureList.java
 /home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/service/SystemInfoServiceManager.java
+/home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/jaxb/Adapter.java
+/home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/jaxb/Sensors.java
+/home/owen/workspaces/workspace_default/SystemInfoService/src/ca/owenpeterson/parsers/SensorsParser.java

@@ -25,7 +25,7 @@
       <appender-ref ref="AsyncFile" level="info" />
     </logger>
     <logger name="ca.owenpeterson">
-      <appender-ref ref="AsyncFile" level="info" />
+      <appender-ref ref="AsyncFile" level="debug" />
     </logger>
 		<root level="debug">
 			<appender-ref ref="Console" />

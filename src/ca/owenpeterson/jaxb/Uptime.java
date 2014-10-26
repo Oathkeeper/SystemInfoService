@@ -1,13 +1,19 @@
 package ca.owenpeterson.jaxb;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Uptime {
+public class Uptime implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1243942295476105660L;
 	private String currentTime;
 	private String uptime;
 	private String users;
