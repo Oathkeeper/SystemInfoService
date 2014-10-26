@@ -1,0 +1,5 @@
+ca/owenpeterson/testclasses/LoggerTest.class
+ca/owenpeterson/service/SystemInfoServiceManager.class
+ca/owenpeterson/jaxb/Uptime.class
+ca/owenpeterson/service/SystemInfoServiceController.class
+ca/owenpeterson/parsers/UptimeParser.class

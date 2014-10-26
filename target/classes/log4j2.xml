@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration name="defaultConfiguration" status="warn"
+	strict="true" monitorInterval="5">
+	<appenders>
+		<appender name="Console" type="Console" target="SYSTEM_OUT">
+			<layout type="PatternLayout" pattern="%d{ISO8601} [%t] %-5level %logger{36} - %msg%n%throwable{full}" />
+		</appender>
+		<appender name="File" type="RollingFile" fileName="/home/owen/logs/mylog.log"
+			filePattern="/home/owen/logs/mylog-%d{yyyy-dd-MM}-%i.log.gz" bufferedIO="true" immediateFlush="true"
+			append="true">
+			<layout type="PatternLayout" pattern="%d{ISO8601} [%t] %-5level %logger{36} - %msg%n%throwable{full}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="50 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="30" />
+		</appender>
+		<appender name="AsyncFile" type="Async" bufferSize="128">
+			<appender-ref ref="File" />
+		</appender>
+	</appenders>
+	<loggers>
+	   <logger name="org.springframework">
+      <appender-ref ref="Console" level="info"/>
+      <appender-ref ref="AsyncFile" level="info" />
+    </logger>
+    <logger name="ca.owenpeterson">
+      <appender-ref ref="AsyncFile" level="info" />
+    </logger>
+		<root level="debug">
+			<appender-ref ref="Console" />
+		</root>
+	</loggers>
+</configuration>
