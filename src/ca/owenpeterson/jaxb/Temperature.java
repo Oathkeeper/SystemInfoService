@@ -1,14 +1,17 @@
 package ca.owenpeterson.jaxb;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Temperature {
-	
+public class Temperature implements Serializable {
+
+	private static final long serialVersionUID = -4502147118772744355L;
+
 	private String name;
 	private String value;
 	

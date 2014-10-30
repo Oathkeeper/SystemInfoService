@@ -5,8 +5,8 @@
 		<appender name="Console" type="Console" target="SYSTEM_OUT">
 			<layout type="PatternLayout" pattern="%d{ISO8601} [%t] %-5level %logger{36} - %msg%n%throwable{full}" />
 		</appender>
-		<appender name="File" type="RollingFile" fileName="/home/owen/logs/mylog.log"
-			filePattern="/home/owen/logs/mylog-%d{yyyy-dd-MM}-%i.log.gz" bufferedIO="true" immediateFlush="true"
+		<appender name="File" type="RollingFile" fileName="/var/log/tomcat/serverlogs/systeminfoservice.log"
+			filePattern="/var/log/tomcat/serverlogs/systeminfoservice-%d{yyyy-dd-MM}-%i.log.gz" bufferedIO="true" immediateFlush="true"
 			append="true">
 			<layout type="PatternLayout" pattern="%d{ISO8601} [%t] %-5level %logger{36} - %msg%n%throwable{full}" />
 			<Policies>

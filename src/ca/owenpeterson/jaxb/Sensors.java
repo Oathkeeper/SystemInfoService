@@ -12,12 +12,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Sensors implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -2313158679550959653L;
 	
-	//just a list of adapters.
 	private AdapterList adapters;
 	
 	public Sensors(AdapterList adapters) {
