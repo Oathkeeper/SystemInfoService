@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import ca.owenpeterson.exception.CommandExecutionException;
+import ca.owenpeterson.exception.CommandOutputException;
 import ca.owenpeterson.jaxb.Sensors;
 import ca.owenpeterson.jaxb.Uptime;
 import ca.owenpeterson.parsers.SensorsParser;
@@ -23,7 +25,7 @@ public class SystemInfoServiceManager {
 	private final String UPTIME_CMD = "uptime";
 	private final String SENSORS_CMD = "sensors";
 	
-	public Uptime getUptime() {
+	public Uptime getUptime() throws CommandOutputException, CommandExecutionException {
 		String rawUptime = systemInterface.getCommandOutput(UPTIME_CMD);
 		rawUptime = StringUtils.normalizeSpace(rawUptime);
 		Uptime uptime = UptimeParser.parseToUptime(rawUptime);
@@ -32,7 +34,7 @@ public class SystemInfoServiceManager {
 		
 	}
 	
-	public Sensors getSensorInfo() {
+	public Sensors getSensorInfo() throws CommandOutputException, CommandExecutionException {
 		logger.debug("SystemInfoServiceManger():getSensorInfo(): Begin");
 		String rawSensorsOutput = systemInterface.getCommandOutput(SENSORS_CMD);
 		Sensors sensors = SensorsParser.parseToSensors(rawSensorsOutput);
