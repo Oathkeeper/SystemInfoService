@@ -42,5 +42,4 @@ public class SystemInfoServiceManager {
 		return sensors;	
 		
 	}
-
 }
