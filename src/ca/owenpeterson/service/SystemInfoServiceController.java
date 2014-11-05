@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import ca.owenpeterson.exception.CommandExecutionException;
 import ca.owenpeterson.exception.CommandOutputException;
-import ca.owenpeterson.jaxb.Sensors;
-import ca.owenpeterson.jaxb.Uptime;
+import ca.owenpeterson.jaxb.sensors.Sensors;
+import ca.owenpeterson.jaxb.uptime.Uptime;
 
 @Controller
 public class SystemInfoServiceController {

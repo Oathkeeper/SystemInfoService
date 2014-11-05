@@ -9,11 +9,11 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import ca.owenpeterson.jaxb.Adapter;
-import ca.owenpeterson.jaxb.AdapterList;
-import ca.owenpeterson.jaxb.Sensors;
-import ca.owenpeterson.jaxb.Temperature;
-import ca.owenpeterson.jaxb.TemperatureList;
+import ca.owenpeterson.jaxb.sensors.Adapter;
+import ca.owenpeterson.jaxb.sensors.AdapterList;
+import ca.owenpeterson.jaxb.sensors.Sensors;
+import ca.owenpeterson.jaxb.sensors.Temperature;
+import ca.owenpeterson.jaxb.sensors.TemperatureList;
 
 public class SensorsParser {
 	

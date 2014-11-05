@@ -1,4 +1,4 @@
-package ca.owenpeterson.jaxb;
+package ca.owenpeterson.jaxb.sensors;
 
 import java.io.Serializable;
 

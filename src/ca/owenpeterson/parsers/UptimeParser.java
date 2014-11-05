@@ -2,7 +2,7 @@ package ca.owenpeterson.parsers;
 
 import org.apache.commons.lang3.StringUtils;
 
-import ca.owenpeterson.jaxb.Uptime;
+import ca.owenpeterson.jaxb.uptime.Uptime;
 
 public class UptimeParser {
 	

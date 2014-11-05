@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 import ca.owenpeterson.exception.CommandExecutionException;
 import ca.owenpeterson.exception.CommandOutputException;
-import ca.owenpeterson.jaxb.Sensors;
-import ca.owenpeterson.jaxb.Uptime;
+import ca.owenpeterson.jaxb.sensors.Sensors;
+import ca.owenpeterson.jaxb.uptime.Uptime;
 import ca.owenpeterson.parsers.SensorsParser;
 import ca.owenpeterson.parsers.UptimeParser;
 import ca.owenpeterson.systeminterface.SystemInterface;

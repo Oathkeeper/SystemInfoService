@@ -6,9 +6,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import ca.owenpeterson.jaxb.Adapter;
-import ca.owenpeterson.jaxb.AdapterList;
-import ca.owenpeterson.jaxb.Sensors;
+import ca.owenpeterson.jaxb.sensors.Adapter;
+import ca.owenpeterson.jaxb.sensors.AdapterList;
+import ca.owenpeterson.jaxb.sensors.Sensors;
 import ca.owenpeterson.parsers.SensorsParser;
 import ca.owenpeterson.systeminterface.SystemInterface;
 
