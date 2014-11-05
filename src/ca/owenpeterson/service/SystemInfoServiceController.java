@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import ca.owenpeterson.exception.CommandExecutionException;
 import ca.owenpeterson.exception.CommandOutputException;
+import ca.owenpeterson.exception.ErrorResponse;
 import ca.owenpeterson.jaxb.sensors.Sensors;
 import ca.owenpeterson.jaxb.uptime.Uptime;
 
@@ -43,8 +44,10 @@ public class SystemInfoServiceController {
 	
 	@ExceptionHandler(Exception.class)
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-	private @ResponseBody String sendError() {
-		return "There was a problem with the service. Please try again later.";
+	private @ResponseBody ErrorResponse sendError() {
+		ErrorResponse errorResponse = new ErrorResponse();
+		errorResponse.setMessage("There was a problem with the service. Please try again later.");
+		return errorResponse;
 	}
 	
 
