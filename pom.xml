@@ -8,6 +8,17 @@
 	<packaging>war</packaging>
 	<profiles>
 		<profile>
+			<id>local</id>
+			<activation>
+			 <activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<environment>local</environment>
+				<web-dir>web.xml</web-dir>
+				<rp.build.warname>local-${project.version}</rp.build.warname>
+			</properties>
+		</profile>
+		<profile>
 			<id>dev</id>
 			<activation>
 			 <activeByDefault>true</activeByDefault>
