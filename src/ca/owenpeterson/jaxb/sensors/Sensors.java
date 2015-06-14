@@ -7,26 +7,28 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import ca.owenpeterson.utils.DateUtils;
+
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Sensors implements Serializable {
 
 	private static final long serialVersionUID = -2313158679550959653L;
 	
-	private Date requestDate;
+	private String requestDate;
 	private AdapterList adapters;
 		
 	public Sensors(AdapterList adapters) {
 		this.adapters = adapters;
-		this.requestDate = new Date();
+		this.requestDate = DateUtils.formatDateToString(new Date());
 	}
 	
 	public Sensors() {
 		this.adapters = new AdapterList();
-		this.requestDate = new Date();
+		this.requestDate = DateUtils.formatDateToString(new Date());
 	}
 	
-	public Date getRequestDate() {
+	public String getRequestDate() {
 		return requestDate;
 	}
 
@@ -38,10 +40,7 @@ public class Sensors implements Serializable {
 		this.adapters = adapters;
 	}
 
-	public void setRequestDate(Date requestDate) {
+	public void setRequestDate(String requestDate) {
 		this.requestDate = requestDate;
 	}
-	
-	
-
 }
